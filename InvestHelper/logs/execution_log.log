@@ -1,0 +1,151 @@
+[INFO] 22:08:12 TestHooks:64 - Global Properties defined: {BROWSER=firefox, TC_LOGGER_PROPERTIES=src/main/resources/log4j//tcLog4j2.properties, USER_PASSWORD=TestAutomation1, TESTDATA_PATH=src/test/resources/testdata/, LOG_FILE_PATH=logs/, USER_LOGIN=testforpetproject2023, PROJECT_PATH=/Users/serhii/Downloads/InvestHelper/, TESTDATA_PROVIDER=properties, LOGGER_PROPERTIES=src/main/resources/log4j//log4j2.properties, LOG_FILE=logs/execution_log.log}
+[TRACE] 22:08:12 TestHooks:79 - Logger for the test case 'Get Top Gainers Stocks for the last trading day' started.
+[INFO] 22:08:12 TestHooks:93 - Test Case Data defined: {stocks_quantity=10}
+[INFO] 22:08:12 TestHooks:31 - Auto update webDriver started.. Browser: firefox
+[INFO] 22:08:13 TestHooks:40 - FireFox webDriver checked.
+[INFO] 22:08:13 TestHooks:52 - WebDriver update/check finished.
+[TRACE] 22:08:13 StocksManagement:30 - Method started..
+[INFO] 22:08:22 TopGainerStocksMarketsPage:68 - List of data table headers returned: [Symbol, Change %, Price, Volume, Rel Volume, Market cap, P/E, EPS dil
+TTM, EPS dil growth
+TTM YoY, Div yield %
+TTM, Sector, Analyst Rating]
+[INFO] 22:08:24 TopGainerStocksMarketsPage:101 - Data results table map returned: {1={analyst rating=—, symbol=CHSN
+Chanson International Holding
+D, eps dil
+ttm=−0.01 USD, ticker=CHSN, rel volume=51.19, p/e=—, market cap=60.835M USD, volume=5.05M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+69.32%, price=4.91 USD, sector=Consumer Non-Durables}, 2={analyst rating=Strong buy, symbol=KALA
+KALA BIO, Inc.
+D, eps dil
+ttm=−42.58 USD, ticker=KALA, rel volume=95.94, p/e=—, market cap=24.237M USD, volume=2.557M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+24.55%, change %=+38.67%, price=9.00 USD, sector=Health Technology}, 3={analyst rating=—, symbol=IXHL
+Incannex Healthcare Inc.
+D, eps dil
+ttm=−0.01 USD, ticker=IXHL, rel volume=12.68, p/e=—, market cap=14.347B USD, volume=1.392M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−47.54%, change %=+26.43%, price=9.04 USD, sector=Health Technology}, 4={analyst rating=—, symbol=PWM
+Prestige Wealth Inc.
+D, eps dil
+ttm=—, ticker=PWM, rel volume=2.70, p/e=—, market cap=—, volume=198.787K, div yield %
+ttm=—, eps dil growth
+ttm yoy=—, change %=+25.73%, price=2.15 USD, sector=Finance}, 5={analyst rating=Strong buy, symbol=CPTN
+Cepton, Inc.
+D, eps dil
+ttm=−3.53 USD, ticker=CPTN, rel volume=3.90, p/e=—, market cap=66.319M USD, volume=52.952K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−192.12%, change %=+25.30%, price=4.18 USD, sector=Electronic Technology}, 6={analyst rating=Strong buy, symbol=C
+CREV
+Carbon Revolution Public Limited Company
+D, eps dil
+ttm=0.02 USD, ticker=CREV, rel volume=1.41, p/e=1971.77, market cap=258.248M USD, volume=45.408K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−93.12%, change %=+22.00%, price=41.21 USD, sector=Producer Manufacturing}, 7={analyst rating=Buy, symbol=TVTX
+Travere Therapeutics, Inc.
+D, eps dil
+ttm=−4.40 USD, ticker=TVTX, rel volume=4.56, p/e=—, market cap=559.085M USD, volume=5.595M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−5.31%, change %=+18.28%, price=7.44 USD, sector=Health Technology}, 8={analyst rating=—, symbol=ADEX
+Adit EdTech Acquisition Corp.
+D, eps dil
+ttm=−0.19 USD, ticker=ADEX, rel volume=1.30, p/e=—, market cap=83.482M USD, volume=13.751K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−356.48%, change %=+16.81%, price=9.38 USD, sector=Finance}, 9={analyst rating=Strong buy, symbol=DERM
+Journey Medical Corporation
+D, eps dil
+ttm=−0.84 USD, ticker=DERM, rel volume=0.80, p/e=—, market cap=105.498M USD, volume=278.813K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+64.27%, change %=+14.69%, price=5.70 USD, sector=Health Technology}, 10={analyst rating=Strong buy, symbol=VKTX
+Viking Therapeutics, Inc.
+D, eps dil
+ttm=−0.92 USD, ticker=VKTX, rel volume=4.28, p/e=—, market cap=1.727B USD, volume=9.039M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−15.32%, change %=+14.49%, price=17.27 USD, sector=Health Technology}}
+[INFO] 22:08:24 StocksManagement:51 - List of top gainers stocks returned: [Stock{ticker='CHSN', marketCap='60.835M USD', exchange='null', sector='Consumer Non-Durables', analyticsRecommendation='—'}, Stock{ticker='KALA', marketCap='24.237M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='IXHL', marketCap='14.347B USD', exchange='null', sector='Health Technology', analyticsRecommendation='—'}, Stock{ticker='PWM', marketCap='—', exchange='null', sector='Finance', analyticsRecommendation='—'}, Stock{ticker='CPTN', marketCap='66.319M USD', exchange='null', sector='Electronic Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='CREV', marketCap='258.248M USD', exchange='null', sector='Producer Manufacturing', analyticsRecommendation='Strong buy'}, Stock{ticker='TVTX', marketCap='559.085M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='ADEX', marketCap='83.482M USD', exchange='null', sector='Finance', analyticsRecommendation='—'}, Stock{ticker='DERM', marketCap='105.498M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='VKTX', marketCap='1.727B USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}]. Happy trading!
+[TRACE] 22:08:24 StocksManagement:52 - Method finished..
+[TRACE] 22:08:25 TestHooks:79 - Logger for the test case 'Add Stocks to the existing Watchlist' started.
+[INFO] 22:08:25 TestHooks:93 - Test Case Data defined: {ticker=AAPL,TSLA, stock_exchange=NASDAQ,NASDAQ, watchlist_name=Watchlist}
+[INFO] 22:08:25 TestHooks:31 - Auto update webDriver started.. Browser: firefox
+[INFO] 22:08:25 TestHooks:40 - FireFox webDriver checked.
+[INFO] 22:08:25 TestHooks:52 - WebDriver update/check finished.
+[INFO] 22:08:25 Stock:49 - Stock object has been created for the TestData Index '0': Stock{ticker='AAPL', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}
+[INFO] 22:08:25 Stock:49 - Stock object has been created for the TestData Index '1': Stock{ticker='TSLA', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}
+[TRACE] 22:08:25 StocksManagement:75 - Method started..
+[TRACE] 22:08:42 StocksManagement:92 - Resuming method..
+[INFO] 22:09:37 TestHooks:64 - Global Properties defined: {BROWSER=firefox, TC_LOGGER_PROPERTIES=src/main/resources/log4j//tcLog4j2.properties, USER_PASSWORD=TestAutomation1, TESTDATA_PATH=src/test/resources/testdata/, LOG_FILE_PATH=logs/, USER_LOGIN=testforpetproject2023, PROJECT_PATH=/Users/serhii/Downloads/InvestHelper/, TESTDATA_PROVIDER=properties, LOGGER_PROPERTIES=src/main/resources/log4j//log4j2.properties, LOG_FILE=logs/execution_log.log}
+[TRACE] 22:09:37 TestHooks:79 - Logger for the test case 'Get Top Gainers Stocks for the last trading day' started.
+[INFO] 22:09:37 TestHooks:93 - Test Case Data defined: {stocks_quantity=10}
+[INFO] 22:09:37 TestHooks:31 - Auto update webDriver started.. Browser: firefox
+[INFO] 22:09:39 TestHooks:40 - FireFox webDriver checked.
+[INFO] 22:09:39 TestHooks:52 - WebDriver update/check finished.
+[TRACE] 22:09:39 StocksManagement:30 - Method started..
+[INFO] 22:09:48 TopGainerStocksMarketsPage:68 - List of data table headers returned: [Symbol, Change %, Price, Volume, Rel Volume, Market cap, P/E, EPS dil
+TTM, EPS dil growth
+TTM YoY, Div yield %
+TTM, Sector, Analyst Rating]
+[INFO] 22:09:50 TopGainerStocksMarketsPage:101 - Data results table map returned: {1={analyst rating=—, symbol=CHSN
+Chanson International Holding
+D, eps dil
+ttm=−0.01 USD, ticker=CHSN, rel volume=51.19, p/e=—, market cap=60.835M USD, volume=5.05M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+69.32%, price=4.91 USD, sector=Consumer Non-Durables}, 2={analyst rating=Strong buy, symbol=KALA
+KALA BIO, Inc.
+D, eps dil
+ttm=−42.58 USD, ticker=KALA, rel volume=95.94, p/e=—, market cap=24.237M USD, volume=2.557M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+24.55%, change %=+38.67%, price=9.00 USD, sector=Health Technology}, 3={analyst rating=—, symbol=IXHL
+Incannex Healthcare Inc.
+D, eps dil
+ttm=−0.01 USD, ticker=IXHL, rel volume=12.68, p/e=—, market cap=14.347B USD, volume=1.392M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−47.54%, change %=+26.43%, price=9.04 USD, sector=Health Technology}, 4={analyst rating=—, symbol=PWM
+Prestige Wealth Inc.
+D, eps dil
+ttm=—, ticker=PWM, rel volume=2.70, p/e=—, market cap=—, volume=198.787K, div yield %
+ttm=—, eps dil growth
+ttm yoy=—, change %=+25.73%, price=2.15 USD, sector=Finance}, 5={analyst rating=Strong buy, symbol=CPTN
+Cepton, Inc.
+D, eps dil
+ttm=−3.53 USD, ticker=CPTN, rel volume=3.90, p/e=—, market cap=66.319M USD, volume=52.952K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−192.12%, change %=+25.30%, price=4.18 USD, sector=Electronic Technology}, 6={analyst rating=Strong buy, symbol=C
+CREV
+Carbon Revolution Public Limited Company
+D, eps dil
+ttm=0.02 USD, ticker=CREV, rel volume=1.41, p/e=1971.77, market cap=258.248M USD, volume=45.408K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−93.12%, change %=+22.00%, price=41.21 USD, sector=Producer Manufacturing}, 7={analyst rating=Buy, symbol=TVTX
+Travere Therapeutics, Inc.
+D, eps dil
+ttm=−4.40 USD, ticker=TVTX, rel volume=4.56, p/e=—, market cap=559.085M USD, volume=5.595M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−5.31%, change %=+18.28%, price=7.44 USD, sector=Health Technology}, 8={analyst rating=—, symbol=ADEX
+Adit EdTech Acquisition Corp.
+D, eps dil
+ttm=−0.19 USD, ticker=ADEX, rel volume=1.30, p/e=—, market cap=83.482M USD, volume=13.751K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−356.48%, change %=+16.81%, price=9.38 USD, sector=Finance}, 9={analyst rating=Strong buy, symbol=DERM
+Journey Medical Corporation
+D, eps dil
+ttm=−0.84 USD, ticker=DERM, rel volume=0.80, p/e=—, market cap=105.498M USD, volume=278.813K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+64.27%, change %=+14.69%, price=5.70 USD, sector=Health Technology}, 10={analyst rating=Strong buy, symbol=VKTX
+Viking Therapeutics, Inc.
+D, eps dil
+ttm=−0.92 USD, ticker=VKTX, rel volume=4.28, p/e=—, market cap=1.727B USD, volume=9.039M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−15.32%, change %=+14.49%, price=17.27 USD, sector=Health Technology}}
+[INFO] 22:09:50 StocksManagement:51 - List of top gainers stocks returned: [Stock{ticker='CHSN', marketCap='60.835M USD', exchange='null', sector='Consumer Non-Durables', analyticsRecommendation='—'}, Stock{ticker='KALA', marketCap='24.237M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='IXHL', marketCap='14.347B USD', exchange='null', sector='Health Technology', analyticsRecommendation='—'}, Stock{ticker='PWM', marketCap='—', exchange='null', sector='Finance', analyticsRecommendation='—'}, Stock{ticker='CPTN', marketCap='66.319M USD', exchange='null', sector='Electronic Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='CREV', marketCap='258.248M USD', exchange='null', sector='Producer Manufacturing', analyticsRecommendation='Strong buy'}, Stock{ticker='TVTX', marketCap='559.085M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='ADEX', marketCap='83.482M USD', exchange='null', sector='Finance', analyticsRecommendation='—'}, Stock{ticker='DERM', marketCap='105.498M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='VKTX', marketCap='1.727B USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}]. Happy trading!
+[TRACE] 22:09:50 StocksManagement:52 - Method finished..
+[TRACE] 22:09:51 TestHooks:79 - Logger for the test case 'Add Stocks to the existing Watchlist' started.
+[INFO] 22:09:51 TestHooks:93 - Test Case Data defined: {ticker=AAPL,TSLA, stock_exchange=NASDAQ,NASDAQ, watchlist_name=Watchlist}
+[INFO] 22:09:51 TestHooks:31 - Auto update webDriver started.. Browser: firefox
+[INFO] 22:09:51 TestHooks:40 - FireFox webDriver checked.
+[INFO] 22:09:51 TestHooks:52 - WebDriver update/check finished.
+[INFO] 22:09:51 Stock:49 - Stock object has been created for the TestData Index '0': Stock{ticker='AAPL', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}
+[INFO] 22:09:51 Stock:49 - Stock object has been created for the TestData Index '1': Stock{ticker='TSLA', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}
+[TRACE] 22:09:51 StocksManagement:75 - Method started..
+[TRACE] 22:10:06 StocksManagement:92 - Resuming method..
+[TRACE] 22:10:07 StocksManagement:92 - Resuming method..
+[INFO] 22:10:07 StocksManagement:99 - List of stocks: [Stock{ticker='AAPL', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}, Stock{ticker='TSLA', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}] successfully added into WatchList: WatchList{name='Watchlist', stockList='[Stock{ticker='AAPL', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}, Stock{ticker='TSLA', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}]'}
+[TRACE] 22:10:07 StocksManagement:100 - Method finished..

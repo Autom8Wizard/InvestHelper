@@ -1,0 +1,12 @@
+[TRACE] 22:09:51 TestHooks:79 - Logger for the test case 'Add Stocks to the existing Watchlist' started.
+[INFO] 22:09:51 TestHooks:93 - Test Case Data defined: {ticker=AAPL,TSLA, stock_exchange=NASDAQ,NASDAQ, watchlist_name=Watchlist}
+[INFO] 22:09:51 TestHooks:31 - Auto update webDriver started.. Browser: firefox
+[INFO] 22:09:51 TestHooks:40 - FireFox webDriver checked.
+[INFO] 22:09:51 TestHooks:52 - WebDriver update/check finished.
+[INFO] 22:09:51 Stock:49 - Stock object has been created for the TestData Index '0': Stock{ticker='AAPL', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}
+[INFO] 22:09:51 Stock:49 - Stock object has been created for the TestData Index '1': Stock{ticker='TSLA', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}
+[TRACE] 22:09:51 StocksManagement:75 - Method started..
+[TRACE] 22:10:06 StocksManagement:92 - Resuming method..
+[TRACE] 22:10:07 StocksManagement:92 - Resuming method..
+[INFO] 22:10:07 StocksManagement:99 - List of stocks: [Stock{ticker='AAPL', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}, Stock{ticker='TSLA', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}] successfully added into WatchList: WatchList{name='Watchlist', stockList='[Stock{ticker='AAPL', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}, Stock{ticker='TSLA', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}]'}
+[TRACE] 22:10:07 StocksManagement:100 - Method finished..
