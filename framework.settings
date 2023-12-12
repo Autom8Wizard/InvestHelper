@@ -1,0 +1,21 @@
+#---------------- TESTING DATA SECTION ----------------#
+
+TESTDATA_PATH=src/test/resources/testdata
+TESTDATA_PROVIDER=properties
+
+#---------------- WEBDRIVERS SECTION ----------------#
+
+DEFAULT_BROWSER=firefox
+BROWSER=firefox
+
+#---------------- LOGGING SECTION ----------------#
+
+LOGGER_SETTINGS_FILENAME=log4j2.properties
+TC_LOGGER_SETTINGS_FILENAME=tcLog4j2.properties
+LOGGER_SETTINGS_FILE_PATH=src/main/resources/log4j/
+LOG_TO_FILE=execution_log.log
+LOG_FILE_PATH=logs
+
+#---------------- User ----------------#
+USER_LOGIN=testforpetproject2023
+USER_PASSWORD=TestAutomation1

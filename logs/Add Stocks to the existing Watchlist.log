@@ -1,0 +1,13 @@
+[TRACE] 12:19:03 TestHooks:124 - Logger for the test case 'Add Stocks to the existing Watchlist' started.
+[INFO] 12:19:03 TestHooks:155 - Setup is not required for the case.
+[INFO] 12:19:03 TestHooks:138 - Test Case Data defined: {ticker=AAPL,TSLA, stock_exchange=NASDAQ,NASDAQ, watchlist_name=Watchlist}
+[INFO] 12:19:03 TestHooks:38 - Auto update webDriver started.. Browser: firefox
+[INFO] 12:19:03 TestHooks:47 - FireFox webDriver checked.
+[INFO] 12:19:03 TestHooks:59 - WebDriver update/check finished.
+[INFO] 12:19:03 Stock:49 - Stock object has been created for the TestData Index '0': Stock{ticker='AAPL', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}
+[INFO] 12:19:03 Stock:49 - Stock object has been created for the TestData Index '1': Stock{ticker='TSLA', marketCap='null', exchange='NASDAQ', sector='null', analyticsRecommendation='null'}
+[TRACE] 12:19:03 StocksManagement:75 - Method started..
+[INFO] 12:19:26 TestHooks:163 - Test Case SetupBack started...
+[INFO] 12:19:26 SetupBack:40 - Just custom setupBack for test case tc_2 started
+[INFO] 12:19:26 SetupBack:24 - tc_2 - SetupBack method has been executed.
+[INFO] 12:19:26 TestHooks:165 - Test Case SetupBack finished.

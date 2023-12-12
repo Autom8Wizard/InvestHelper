@@ -1,0 +1,12 @@
+[TRACE] 12:22:47 TestHooks:97 - Logger for the test case 'Get Top Gainers Stocks for the last trading day' started.
+[WARN] 12:22:47 TestHooks:158 - Current Test ('tc_1' is marked as the Test w/o Test Data.) Test Data preparation step skipped.
+[INFO] 12:22:47 TestHooks:161 - Test Case Data defined: {}
+[INFO] 12:22:47 TestHooks:174 - Test Case Setup started...
+[INFO] 12:22:47 Setup:33 - Just custom setup for test case tc_1 started
+[INFO] 12:22:47 Setup:25 - tc_1 - Setup method has been executed.
+[INFO] 12:22:47 TestHooks:176 - Test Case Setup finished.
+[TRACE] 12:22:47 StocksManagement:30 - Method started..
+[INFO] 12:22:58 TestHooks:192 - Test Case SetupBack started...
+[INFO] 12:22:58 SetupBack:32 - Just custom setupBack for test case tc_1 started
+[INFO] 12:22:58 SetupBack:24 - tc_1 - SetupBack method has been executed.
+[INFO] 12:22:58 TestHooks:194 - Test Case SetupBack finished.
