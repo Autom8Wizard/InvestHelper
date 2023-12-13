@@ -16,11 +16,12 @@
         <!-- dependencies -->
         <selenide.version>7.0.3</selenide.version>
         <selenium.version>4.16.1</selenium.version>
-        <junit.version>5.10.1</junit.version>
+        <junit.version>5.8.2</junit.version>
         <webdrivermanager.version>5.5.3</webdrivermanager.version>
         <log4j.version>2.20.0</log4j.version>
         <lombok.version>1.18.30</lombok.version>
         <aspectj.version>1.9.6</aspectj.version>
+        <allure.version>2.25.0</allure.version>
     </properties>
 
     <dependencies>
@@ -64,6 +65,17 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>${allure.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-java-commons</artifactId>
+            <version>${allure.version}</version>
         </dependency>
     </dependencies>
 

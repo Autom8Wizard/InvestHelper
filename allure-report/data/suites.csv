@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 13 16:44:00 CET 2023","Wed Dec 13 16:44:15 CET 2023","15290","","TradingViewTest","","TradingViewTest","tc_1","Get Top Gainers Stocks for the last trading day",""
