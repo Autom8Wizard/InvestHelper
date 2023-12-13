@@ -2897,3 +2897,303 @@ ttm yoy=+78.20%, change %=+24.29%, price=8.70 USD, sector=Consumer Services}}
 [INFO] 12:22:58 SetupBack:32 - Just custom setupBack for test case tc_1 started
 [INFO] 12:22:58 SetupBack:24 - tc_1 - SetupBack method has been executed.
 [INFO] 12:22:58 TestHooks:194 - Test Case SetupBack finished.
+[INFO] 11:38:05 TestHooks:47 - Global Properties defined: {BROWSER=firefox, TC_LOGGER_PROPERTIES=src/main/resources/log4j//tcLog4j2.properties, USER_PASSWORD=TestAutomation1, TESTDATA_PATH=src/test/resources/testdata/, LOG_FILE_PATH=logs/, USER_LOGIN=testforpetproject2023, PROJECT_PATH=/Users/serhii/Documents/Projects/InvestHelper/, TESTDATA_PROVIDER=properties, LOGGER_PROPERTIES=src/main/resources/log4j//log4j2.properties, LOG_FILE=logs/execution_log.log}
+[INFO] 11:38:05 TestHooks:57 - Auto update webDriver started.. Browser: firefox
+[INFO] 11:38:06 TestHooks:66 - FireFox webDriver checked.
+[INFO] 11:38:06 TestHooks:78 - WebDriver update/check finished.
+[TRACE] 11:38:06 TestHooks:97 - Logger for the test case 'Get Top Gainers Stocks for the last trading day' started.
+[INFO] 11:38:06 TestHooks:161 - Test Case Data defined: {stocks_quantity=10}
+[INFO] 11:38:06 TestHooks:174 - Test Case Setup started...
+[INFO] 11:38:06 Setup:33 - Just custom setup for test case tc_1 started
+[INFO] 11:38:06 Setup:25 - tc_1 - Setup method has been executed.
+[INFO] 11:38:06 TestHooks:176 - Test Case Setup finished.
+[TRACE] 11:38:06 StocksManagement:30 - Method started..
+[INFO] 11:38:16 TopGainerStocksMarketsPage:68 - List of data table headers returned: [Symbol, Change %, Price, Volume, Rel Volume, Market cap, P/E, EPS dil
+TTM, EPS dil growth
+TTM YoY, Div yield %
+TTM, Sector, Analyst Rating]
+[INFO] 11:38:18 TopGainerStocksMarketsPage:101 - Data results table map returned: {1={analyst rating=Buy, symbol=CCCC
+C4 Therapeutics, Inc.
+D, eps dil
+ttm=−2.75 USD, ticker=CCCC, rel volume=196.07, p/e=—, market cap=115.318M USD, volume=179.46M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−25.87%, change %=+98.31%, price=2.34 USD, sector=Health Technology}, 2={analyst rating=Strong buy, symbol=A
+ADTX
+Aditxt, Inc.
+D, eps dil
+ttm=−213.70 USD, ticker=ADTX, rel volume=35.32, p/e=—, market cap=2.691M USD, volume=35.6M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+92.01%, change %=+60.26%, price=6.09 USD, sector=Health Technology}, 3={analyst rating=Buy, symbol=ICVX
+Icosavax, Inc.
+D, eps dil
+ttm=−2.22 USD, ticker=ICVX, rel volume=21.14, p/e=—, market cap=785.417M USD, volume=9.535M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−1.59%, change %=+49.48%, price=15.68 USD, sector=Health Technology}, 4={analyst rating=—, symbol=CHSN
+Chanson International Holding
+D, eps dil
+ttm=−0.01 USD, ticker=CHSN, rel volume=1.08, p/e=—, market cap=139.759M USD, volume=2.439M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+36.56%, price=11.28 USD, sector=Consumer Non-Durables}, 5={analyst rating=—, symbol=C
+CYTO
+Altamira Therapeutics Ltd.
+D, eps dil
+ttm=—, ticker=CYTO, rel volume=1.91, p/e=—, market cap=2.241M USD, volume=3.504M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+34.00%, price=5.08 USD, sector=Health Technology}, 6={analyst rating=Strong buy, symbol=SGMT
+Sagimet Biosciences Inc. - Series A
+D, eps dil
+ttm=—, ticker=SGMT, rel volume=1.93, p/e=—, market cap=103.029M USD, volume=242.462K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+25.85%, price=4.82 USD, sector=Health Technology}, 7={analyst rating=Buy, symbol=P
+PAVM
+PAVmed Inc.
+D, eps dil
+ttm=−10.52 USD, ticker=PAVM, rel volume=3.83, p/e=—, market cap=31.156M USD, volume=312.605K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+28.63%, change %=+24.84%, price=3.87 USD, sector=Health Technology}, 8={analyst rating=—, symbol=CLIN
+Clean Earth Acquisitions Corp.
+D, eps dil
+ttm=0.14 USD, ticker=CLIN, rel volume=3.35, p/e=40.90, market cap=96.885M USD, volume=701.554K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+22.11%, price=5.80 USD, sector=Finance}, 9={analyst rating=Neutral, symbol=VIEW
+View, Inc.
+D, eps dil
+ttm=−67.86 USD, ticker=VIEW, rel volume=0.52, p/e=—, market cap=9.802M USD, volume=4.605M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+0.65%, change %=+20.50%, price=2.41 USD, sector=Process Industries}, 10={analyst rating=Neutral, symbol=SST
+System1, Inc.
+D, eps dil
+ttm=−4.79 USD, ticker=SST, rel volume=1.11, p/e=—, market cap=256.194M USD, volume=317.228K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−23.53%, change %=+20.11%, price=2.21 USD, sector=Technology Services}}
+[INFO] 11:38:18 StocksManagement:51 - List of top gainers stocks returned: [Stock{ticker='CCCC', marketCap='115.318M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='ADTX', marketCap='2.691M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='ICVX', marketCap='785.417M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='CHSN', marketCap='139.759M USD', exchange='null', sector='Consumer Non-Durables', analyticsRecommendation='—'}, Stock{ticker='CYTO', marketCap='2.241M USD', exchange='null', sector='Health Technology', analyticsRecommendation='—'}, Stock{ticker='SGMT', marketCap='103.029M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='PAVM', marketCap='31.156M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='CLIN', marketCap='96.885M USD', exchange='null', sector='Finance', analyticsRecommendation='—'}, Stock{ticker='VIEW', marketCap='9.802M USD', exchange='null', sector='Process Industries', analyticsRecommendation='Neutral'}, Stock{ticker='SST', marketCap='256.194M USD', exchange='null', sector='Technology Services', analyticsRecommendation='Neutral'}]. Happy trading!
+[TRACE] 11:38:18 StocksManagement:52 - Method finished..
+[INFO] 11:38:18 TestHooks:192 - Test Case SetupBack started...
+[INFO] 11:38:18 SetupBack:32 - Just custom setupBack for test case tc_1 started
+[INFO] 11:38:18 SetupBack:24 - tc_1 - SetupBack method has been executed.
+[INFO] 11:38:18 TestHooks:194 - Test Case SetupBack finished.
+[INFO] 11:39:58 TestHooks:47 - Global Properties defined: {BROWSER=firefox, TC_LOGGER_PROPERTIES=src/main/resources/log4j//tcLog4j2.properties, USER_PASSWORD=TestAutomation1, TESTDATA_PATH=src/test/resources/testdata/, LOG_FILE_PATH=logs/, USER_LOGIN=testforpetproject2023, PROJECT_PATH=/Users/serhii/Documents/Projects/InvestHelper/, TESTDATA_PROVIDER=properties, LOGGER_PROPERTIES=src/main/resources/log4j//log4j2.properties, LOG_FILE=logs/execution_log.log}
+[INFO] 11:39:58 TestHooks:57 - Auto update webDriver started.. Browser: firefox
+[INFO] 11:39:59 TestHooks:66 - FireFox webDriver checked.
+[INFO] 11:39:59 TestHooks:78 - WebDriver update/check finished.
+[TRACE] 11:39:59 TestHooks:97 - Logger for the test case 'Get Top Gainers Stocks for the last trading day' started.
+[INFO] 11:39:59 TestHooks:161 - Test Case Data defined: {stocks_quantity=10}
+[INFO] 11:39:59 TestHooks:174 - Test Case Setup started...
+[INFO] 11:39:59 Setup:33 - Just custom setup for test case tc_1 started
+[INFO] 11:39:59 Setup:25 - tc_1 - Setup method has been executed.
+[INFO] 11:39:59 TestHooks:176 - Test Case Setup finished.
+[TRACE] 11:39:59 StocksManagement:30 - Method started..
+[INFO] 11:40:08 TopGainerStocksMarketsPage:68 - List of data table headers returned: [Symbol, Change %, Price, Volume, Rel Volume, Market cap, P/E, EPS dil
+TTM, EPS dil growth
+TTM YoY, Div yield %
+TTM, Sector, Analyst Rating]
+[INFO] 11:40:10 TopGainerStocksMarketsPage:101 - Data results table map returned: {1={analyst rating=Buy, symbol=CCCC
+C4 Therapeutics, Inc.
+D, eps dil
+ttm=−2.75 USD, ticker=CCCC, rel volume=196.07, p/e=—, market cap=115.318M USD, volume=179.46M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−25.87%, change %=+98.31%, price=2.34 USD, sector=Health Technology}, 2={analyst rating=Strong buy, symbol=A
+ADTX
+Aditxt, Inc.
+D, eps dil
+ttm=−213.70 USD, ticker=ADTX, rel volume=35.32, p/e=—, market cap=2.691M USD, volume=35.6M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+92.01%, change %=+60.26%, price=6.09 USD, sector=Health Technology}, 3={analyst rating=Buy, symbol=ICVX
+Icosavax, Inc.
+D, eps dil
+ttm=−2.22 USD, ticker=ICVX, rel volume=21.14, p/e=—, market cap=785.417M USD, volume=9.535M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−1.59%, change %=+49.48%, price=15.68 USD, sector=Health Technology}, 4={analyst rating=—, symbol=CHSN
+Chanson International Holding
+D, eps dil
+ttm=−0.01 USD, ticker=CHSN, rel volume=1.08, p/e=—, market cap=139.759M USD, volume=2.439M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+36.56%, price=11.28 USD, sector=Consumer Non-Durables}, 5={analyst rating=—, symbol=C
+CYTO
+Altamira Therapeutics Ltd.
+D, eps dil
+ttm=—, ticker=CYTO, rel volume=1.91, p/e=—, market cap=2.241M USD, volume=3.504M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+34.00%, price=5.08 USD, sector=Health Technology}, 6={analyst rating=Strong buy, symbol=SGMT
+Sagimet Biosciences Inc. - Series A
+D, eps dil
+ttm=—, ticker=SGMT, rel volume=1.93, p/e=—, market cap=103.029M USD, volume=242.462K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+25.85%, price=4.82 USD, sector=Health Technology}, 7={analyst rating=Buy, symbol=P
+PAVM
+PAVmed Inc.
+D, eps dil
+ttm=−10.52 USD, ticker=PAVM, rel volume=3.83, p/e=—, market cap=31.156M USD, volume=312.605K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+28.63%, change %=+24.84%, price=3.87 USD, sector=Health Technology}, 8={analyst rating=—, symbol=CLIN
+Clean Earth Acquisitions Corp.
+D, eps dil
+ttm=0.14 USD, ticker=CLIN, rel volume=3.35, p/e=40.90, market cap=96.885M USD, volume=701.554K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+22.11%, price=5.80 USD, sector=Finance}, 9={analyst rating=Neutral, symbol=VIEW
+View, Inc.
+D, eps dil
+ttm=−67.86 USD, ticker=VIEW, rel volume=0.52, p/e=—, market cap=9.802M USD, volume=4.605M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+0.65%, change %=+20.50%, price=2.41 USD, sector=Process Industries}, 10={analyst rating=Neutral, symbol=SST
+System1, Inc.
+D, eps dil
+ttm=−4.79 USD, ticker=SST, rel volume=1.11, p/e=—, market cap=256.194M USD, volume=317.228K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−23.53%, change %=+20.11%, price=2.21 USD, sector=Technology Services}}
+[INFO] 11:40:10 StocksManagement:51 - List of top gainers stocks returned: [Stock{ticker='CCCC', marketCap='115.318M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='ADTX', marketCap='2.691M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='ICVX', marketCap='785.417M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='CHSN', marketCap='139.759M USD', exchange='null', sector='Consumer Non-Durables', analyticsRecommendation='—'}, Stock{ticker='CYTO', marketCap='2.241M USD', exchange='null', sector='Health Technology', analyticsRecommendation='—'}, Stock{ticker='SGMT', marketCap='103.029M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='PAVM', marketCap='31.156M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='CLIN', marketCap='96.885M USD', exchange='null', sector='Finance', analyticsRecommendation='—'}, Stock{ticker='VIEW', marketCap='9.802M USD', exchange='null', sector='Process Industries', analyticsRecommendation='Neutral'}, Stock{ticker='SST', marketCap='256.194M USD', exchange='null', sector='Technology Services', analyticsRecommendation='Neutral'}]. Happy trading!
+[TRACE] 11:40:10 StocksManagement:52 - Method finished..
+[INFO] 11:40:10 TestHooks:192 - Test Case SetupBack started...
+[INFO] 11:40:10 SetupBack:32 - Just custom setupBack for test case tc_1 started
+[INFO] 11:40:10 SetupBack:24 - tc_1 - SetupBack method has been executed.
+[INFO] 11:40:10 TestHooks:194 - Test Case SetupBack finished.
+[INFO] 12:03:44 TestHooks:47 - Global Properties defined: {BROWSER=firefox, TC_LOGGER_PROPERTIES=src/main/resources/log4j//tcLog4j2.properties, USER_PASSWORD=TestAutomation1, TESTDATA_PATH=src/test/resources/testdata/, LOG_FILE_PATH=logs/, USER_LOGIN=testforpetproject2023, PROJECT_PATH=/Users/serhii/Documents/Projects/InvestHelper/, TESTDATA_PROVIDER=properties, LOGGER_PROPERTIES=src/main/resources/log4j//log4j2.properties, LOG_FILE=logs/execution_log.log}
+[INFO] 12:03:44 TestHooks:57 - Auto update webDriver started.. Browser: firefox
+[INFO] 12:03:45 TestHooks:66 - FireFox webDriver checked.
+[INFO] 12:03:45 TestHooks:78 - WebDriver update/check finished.
+[TRACE] 12:03:45 TestHooks:97 - Logger for the test case 'Get Top Gainers Stocks for the last trading day' started.
+[INFO] 12:03:45 TestHooks:161 - Test Case Data defined: {stocks_quantity=10}
+[INFO] 12:03:45 TestHooks:174 - Test Case Setup started...
+[INFO] 12:03:45 Setup:33 - Just custom setup for test case tc_1 started
+[INFO] 12:03:45 Setup:25 - tc_1 - Setup method has been executed.
+[INFO] 12:03:45 TestHooks:176 - Test Case Setup finished.
+[TRACE] 12:03:45 StocksManagement:30 - Method started..
+[INFO] 12:03:55 TopGainerStocksMarketsPage:68 - List of data table headers returned: [Symbol, Change %, Price, Volume, Rel Volume, Market cap, P/E, EPS dil
+TTM, EPS dil growth
+TTM YoY, Div yield %
+TTM, Sector, Analyst Rating]
+[INFO] 12:03:56 TopGainerStocksMarketsPage:101 - Data results table map returned: {1={analyst rating=Buy, symbol=CCCC
+C4 Therapeutics, Inc.
+D, eps dil
+ttm=−2.75 USD, ticker=CCCC, rel volume=196.07, p/e=—, market cap=115.318M USD, volume=179.46M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−25.87%, change %=+98.31%, price=2.34 USD, sector=Health Technology}, 2={analyst rating=Strong buy, symbol=A
+ADTX
+Aditxt, Inc.
+D, eps dil
+ttm=−213.70 USD, ticker=ADTX, rel volume=35.32, p/e=—, market cap=2.691M USD, volume=35.6M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+92.01%, change %=+60.26%, price=6.09 USD, sector=Health Technology}, 3={analyst rating=Buy, symbol=ICVX
+Icosavax, Inc.
+D, eps dil
+ttm=−2.22 USD, ticker=ICVX, rel volume=21.14, p/e=—, market cap=785.417M USD, volume=9.535M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−1.59%, change %=+49.48%, price=15.68 USD, sector=Health Technology}, 4={analyst rating=—, symbol=CHSN
+Chanson International Holding
+D, eps dil
+ttm=−0.01 USD, ticker=CHSN, rel volume=1.08, p/e=—, market cap=139.759M USD, volume=2.439M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+36.56%, price=11.28 USD, sector=Consumer Non-Durables}, 5={analyst rating=—, symbol=C
+CYTO
+Altamira Therapeutics Ltd.
+D, eps dil
+ttm=—, ticker=CYTO, rel volume=1.91, p/e=—, market cap=2.241M USD, volume=3.504M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+34.00%, price=5.08 USD, sector=Health Technology}, 6={analyst rating=Strong buy, symbol=SGMT
+Sagimet Biosciences Inc. - Series A
+D, eps dil
+ttm=—, ticker=SGMT, rel volume=1.93, p/e=—, market cap=103.029M USD, volume=242.462K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+25.85%, price=4.82 USD, sector=Health Technology}, 7={analyst rating=Buy, symbol=P
+PAVM
+PAVmed Inc.
+D, eps dil
+ttm=−10.52 USD, ticker=PAVM, rel volume=3.83, p/e=—, market cap=31.156M USD, volume=312.605K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+28.63%, change %=+24.84%, price=3.87 USD, sector=Health Technology}, 8={analyst rating=—, symbol=CLIN
+Clean Earth Acquisitions Corp.
+D, eps dil
+ttm=0.14 USD, ticker=CLIN, rel volume=3.35, p/e=40.90, market cap=96.885M USD, volume=701.554K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+22.11%, price=5.80 USD, sector=Finance}, 9={analyst rating=Neutral, symbol=VIEW
+View, Inc.
+D, eps dil
+ttm=−67.86 USD, ticker=VIEW, rel volume=0.52, p/e=—, market cap=9.802M USD, volume=4.605M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+0.65%, change %=+20.50%, price=2.41 USD, sector=Process Industries}, 10={analyst rating=Neutral, symbol=SST
+System1, Inc.
+D, eps dil
+ttm=−4.79 USD, ticker=SST, rel volume=1.11, p/e=—, market cap=256.194M USD, volume=317.228K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−23.53%, change %=+20.11%, price=2.21 USD, sector=Technology Services}}
+[INFO] 12:03:56 StocksManagement:51 - List of top gainers stocks returned: [Stock{ticker='CCCC', marketCap='115.318M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='ADTX', marketCap='2.691M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='ICVX', marketCap='785.417M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='CHSN', marketCap='139.759M USD', exchange='null', sector='Consumer Non-Durables', analyticsRecommendation='—'}, Stock{ticker='CYTO', marketCap='2.241M USD', exchange='null', sector='Health Technology', analyticsRecommendation='—'}, Stock{ticker='SGMT', marketCap='103.029M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='PAVM', marketCap='31.156M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='CLIN', marketCap='96.885M USD', exchange='null', sector='Finance', analyticsRecommendation='—'}, Stock{ticker='VIEW', marketCap='9.802M USD', exchange='null', sector='Process Industries', analyticsRecommendation='Neutral'}, Stock{ticker='SST', marketCap='256.194M USD', exchange='null', sector='Technology Services', analyticsRecommendation='Neutral'}]. Happy trading!
+[TRACE] 12:03:56 StocksManagement:52 - Method finished..
+[INFO] 12:03:56 TestHooks:192 - Test Case SetupBack started...
+[INFO] 12:03:56 SetupBack:32 - Just custom setupBack for test case tc_1 started
+[INFO] 12:03:56 SetupBack:24 - tc_1 - SetupBack method has been executed.
+[INFO] 12:03:56 TestHooks:194 - Test Case SetupBack finished.
+[INFO] 12:07:22 TestHooks:47 - Global Properties defined: {BROWSER=firefox, TC_LOGGER_PROPERTIES=src/main/resources/log4j//tcLog4j2.properties, USER_PASSWORD=TestAutomation1, TESTDATA_PATH=src/test/resources/testdata/, LOG_FILE_PATH=logs/, USER_LOGIN=testforpetproject2023, PROJECT_PATH=/Users/serhii/Documents/Projects/InvestHelper/, TESTDATA_PROVIDER=properties, LOGGER_PROPERTIES=src/main/resources/log4j//log4j2.properties, LOG_FILE=logs/execution_log.log}
+[INFO] 12:07:22 TestHooks:57 - Auto update webDriver started.. Browser: firefox
+[INFO] 12:07:23 TestHooks:66 - FireFox webDriver checked.
+[INFO] 12:07:23 TestHooks:78 - WebDriver update/check finished.
+[TRACE] 12:07:23 TestHooks:97 - Logger for the test case 'Get Top Gainers Stocks for the last trading day' started.
+[INFO] 12:07:23 TestHooks:161 - Test Case Data defined: {stocks_quantity=10}
+[INFO] 12:07:23 TestHooks:174 - Test Case Setup started...
+[INFO] 12:07:23 Setup:33 - Just custom setup for test case tc_1 started
+[INFO] 12:07:23 Setup:25 - tc_1 - Setup method has been executed.
+[INFO] 12:07:23 TestHooks:176 - Test Case Setup finished.
+[TRACE] 12:07:23 StocksManagement:30 - Method started..
+[INFO] 12:07:32 TopGainerStocksMarketsPage:68 - List of data table headers returned: [Symbol, Change %, Price, Volume, Rel Volume, Market cap, P/E, EPS dil
+TTM, EPS dil growth
+TTM YoY, Div yield %
+TTM, Sector, Analyst Rating]
+[INFO] 12:07:34 TopGainerStocksMarketsPage:101 - Data results table map returned: {1={analyst rating=Buy, symbol=CCCC
+C4 Therapeutics, Inc.
+D, eps dil
+ttm=−2.75 USD, ticker=CCCC, rel volume=196.07, p/e=—, market cap=115.318M USD, volume=179.46M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−25.87%, change %=+98.31%, price=2.34 USD, sector=Health Technology}, 2={analyst rating=Strong buy, symbol=A
+ADTX
+Aditxt, Inc.
+D, eps dil
+ttm=−213.70 USD, ticker=ADTX, rel volume=35.32, p/e=—, market cap=2.691M USD, volume=35.6M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+92.01%, change %=+60.26%, price=6.09 USD, sector=Health Technology}, 3={analyst rating=Buy, symbol=ICVX
+Icosavax, Inc.
+D, eps dil
+ttm=−2.22 USD, ticker=ICVX, rel volume=21.14, p/e=—, market cap=785.417M USD, volume=9.535M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−1.59%, change %=+49.48%, price=15.68 USD, sector=Health Technology}, 4={analyst rating=—, symbol=CHSN
+Chanson International Holding
+D, eps dil
+ttm=−0.01 USD, ticker=CHSN, rel volume=1.08, p/e=—, market cap=139.759M USD, volume=2.439M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+36.56%, price=11.28 USD, sector=Consumer Non-Durables}, 5={analyst rating=—, symbol=C
+CYTO
+Altamira Therapeutics Ltd.
+D, eps dil
+ttm=—, ticker=CYTO, rel volume=1.91, p/e=—, market cap=2.241M USD, volume=3.504M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+34.00%, price=5.08 USD, sector=Health Technology}, 6={analyst rating=Strong buy, symbol=SGMT
+Sagimet Biosciences Inc. - Series A
+D, eps dil
+ttm=—, ticker=SGMT, rel volume=1.93, p/e=—, market cap=103.029M USD, volume=242.462K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+25.85%, price=4.82 USD, sector=Health Technology}, 7={analyst rating=Buy, symbol=P
+PAVM
+PAVmed Inc.
+D, eps dil
+ttm=−10.52 USD, ticker=PAVM, rel volume=3.83, p/e=—, market cap=31.156M USD, volume=312.605K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+28.63%, change %=+24.84%, price=3.87 USD, sector=Health Technology}, 8={analyst rating=—, symbol=CLIN
+Clean Earth Acquisitions Corp.
+D, eps dil
+ttm=0.14 USD, ticker=CLIN, rel volume=3.35, p/e=40.90, market cap=96.885M USD, volume=701.554K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=—, change %=+22.11%, price=5.80 USD, sector=Finance}, 9={analyst rating=Neutral, symbol=VIEW
+View, Inc.
+D, eps dil
+ttm=−67.86 USD, ticker=VIEW, rel volume=0.52, p/e=—, market cap=9.802M USD, volume=4.605M, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=+0.65%, change %=+20.50%, price=2.41 USD, sector=Process Industries}, 10={analyst rating=Neutral, symbol=SST
+System1, Inc.
+D, eps dil
+ttm=−4.79 USD, ticker=SST, rel volume=1.11, p/e=—, market cap=256.194M USD, volume=317.228K, div yield %
+ttm=0.00%, eps dil growth
+ttm yoy=−23.53%, change %=+20.11%, price=2.21 USD, sector=Technology Services}}
+[INFO] 12:07:34 StocksManagement:51 - List of top gainers stocks returned: [Stock{ticker='CCCC', marketCap='115.318M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='ADTX', marketCap='2.691M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='ICVX', marketCap='785.417M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='CHSN', marketCap='139.759M USD', exchange='null', sector='Consumer Non-Durables', analyticsRecommendation='—'}, Stock{ticker='CYTO', marketCap='2.241M USD', exchange='null', sector='Health Technology', analyticsRecommendation='—'}, Stock{ticker='SGMT', marketCap='103.029M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Strong buy'}, Stock{ticker='PAVM', marketCap='31.156M USD', exchange='null', sector='Health Technology', analyticsRecommendation='Buy'}, Stock{ticker='CLIN', marketCap='96.885M USD', exchange='null', sector='Finance', analyticsRecommendation='—'}, Stock{ticker='VIEW', marketCap='9.802M USD', exchange='null', sector='Process Industries', analyticsRecommendation='Neutral'}, Stock{ticker='SST', marketCap='256.194M USD', exchange='null', sector='Technology Services', analyticsRecommendation='Neutral'}]. Happy trading!
+[TRACE] 12:07:34 StocksManagement:52 - Method finished..
+[INFO] 12:07:34 TestHooks:192 - Test Case SetupBack started...
+[INFO] 12:07:34 SetupBack:32 - Just custom setupBack for test case tc_1 started
+[INFO] 12:07:34 SetupBack:24 - tc_1 - SetupBack method has been executed.
+[INFO] 12:07:34 TestHooks:194 - Test Case SetupBack finished.
