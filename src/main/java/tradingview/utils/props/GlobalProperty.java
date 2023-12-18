@@ -29,6 +29,13 @@ public class GlobalProperty extends PropertyHandler {
         properties.setProperty("LOG_FILE_PATH", temp_props.getProperty("LOG_FILE_PATH").replaceAll("/", Matcher.quoteReplacement(File.separator)) + File.separator);
         properties.setProperty("LOG_FILE", properties.getProperty("LOG_FILE_PATH") + temp_props.getProperty("LOG_TO_FILE"));
 
+        properties.setProperty("SCREENSHOT_FILE_EXTENSION", temp_props.getProperty("SCREENSHOT_FILE_EXTENSION", ".png"));
+        properties.setProperty("VIDEO_PATH", temp_props.getProperty("VIDEO_PATH", "video").replaceAll("/", Matcher.quoteReplacement(File.separator)) + File.separator);
+        properties.setProperty("VIDEO_FILE_EXTENSION", temp_props.getProperty("VIDEO_FILE_EXTENSION", ".mp4"));
+        properties.setProperty("VIDEO_KEEP_SCREENSHOTS", temp_props.getProperty("VIDEO_KEEP_SCREENSHOTS", "false"));
+        properties.setProperty("VIDEO_SCREENSHOT_CAPTURE_STEP", temp_props.getProperty("VIDEO_SCREENSHOT_CAPTURE_STEP", "250"));
+        properties.setProperty("VIDEO_CONVERSION_TIMEOUT", temp_props.getProperty("VIDEO_CONVERSION_TIMEOUT", "30"));
+
         properties.setProperty("USER_LOGIN", temp_props.getProperty("USER_LOGIN"));
         properties.setProperty("USER_PASSWORD", temp_props.getProperty("USER_PASSWORD"));
     }
@@ -91,5 +98,38 @@ public class GlobalProperty extends PropertyHandler {
 
     public static String getCurrentTestName() {
         return getProperty("testName");
+    }
+
+
+    /* Video recording */
+
+
+    public static String getScreenshotFileExtension() {
+        return getProperty("SCREENSHOT_FILE_EXTENSION");
+    }
+
+
+    public static String getVideoFileExtension() {
+        return getProperty("VIDEO_FILE_EXTENSION");
+    }
+
+
+    public static boolean isKeepVideoScreenshots() {
+        return getProperty("VIDEO_KEEP_SCREENSHOTS", "false").equalsIgnoreCase("true");
+    }
+
+
+    public static long getVideoScreenshotCaptureStepTimeout() {
+        return Long.parseLong(getProperty("VIDEO_SCREENSHOT_CAPTURE_STEP", "100"));
+    }
+
+
+    public static int getVideoConversionTimeout() {
+        return Integer.parseInt(getProperty("VIDEO_CONVERSION_TIMEOUT", "30"));
+    }
+
+
+    public static String getVideoDirectoryPath() {
+        return getProperty("VIDEO_PATH");
     }
 }

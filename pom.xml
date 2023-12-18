@@ -20,8 +20,11 @@
         <webdrivermanager.version>5.5.3</webdrivermanager.version>
         <log4j.version>2.20.0</log4j.version>
         <lombok.version>1.18.30</lombok.version>
-        <aspectj.version>1.9.6</aspectj.version>
+        <aspectj.version>1.9.21</aspectj.version>
         <allure.version>2.25.0</allure.version>
+        <allure.maven.version>2.8</allure.maven.version>
+        <maven.surefire.version>3.0.0-M5</maven.surefire.version>
+        <maven.compiler.version>2.3.2</maven.compiler.version>
     </properties>
 
     <dependencies>
@@ -71,10 +74,9 @@
             <artifactId>allure-junit5</artifactId>
             <version>${allure.version}</version>
         </dependency>
-
         <dependency>
             <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-java-commons</artifactId>
+            <artifactId>allure-selenide</artifactId>
             <version>${allure.version}</version>
         </dependency>
     </dependencies>
@@ -84,17 +86,17 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>${maven.compiler.version}</version>
                 <configuration>
-                    <source>21</source>
-                    <target>21</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <version>${maven.surefire.version}</version>
                 <configuration>
                     <trimStackTrace>false</trimStackTrace>
                     <argLine>
@@ -109,13 +111,11 @@
                     </dependency>
                 </dependencies>
             </plugin>
-
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
-                <version>2.8</version>
+                <version>${allure.maven.version}</version>
             </plugin>
         </plugins>
     </build>
-
 </project>

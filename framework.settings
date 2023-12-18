@@ -16,6 +16,14 @@ LOGGER_SETTINGS_FILE_PATH=src/main/resources/log4j/
 LOG_TO_FILE=execution_log.log
 LOG_FILE_PATH=logs
 
+#------------------- VIDEO SECTION ------------------#
+
+VIDEO_PATH=video
+VIDEO_FILE_EXTENSION=.mp4
+VIDEO_KEEP_SCREENSHOTS=false
+VIDEO_SCREENSHOT_CAPTURE_STEP=100
+VIDEO_CONVERSION_TIMEOUT=30
+
 #---------------- User ----------------#
 USER_LOGIN=testforpetproject2023
 USER_PASSWORD=TestAutomation1

@@ -1,6 +1,7 @@
 package tradingview.processes;
 
 import dev.failsafe.internal.util.Assert;
+import io.qameta.allure.Step;
 import tradingview.models.Stock;
 import tradingview.models.WatchList;
 import tradingview.pages.ProfilePage;
@@ -26,6 +27,7 @@ public class StocksManagement {
      * @param number - number of first top gainers stocks (by default 100)
      * @return list of Stocks
      */
+    @Step("WebUI Get List of Top Gainers Stocks")
     public static List<Stock> getListOfTopGainersStocks(Integer number) {
         logger.trace("Method started..");
 
@@ -59,6 +61,7 @@ public class StocksManagement {
      *
      * @return list of Stocks (by default 100)
      */
+    @Step("WebUI Get List of Top Gainers Stocks")
     public static List<Stock> getListOfTopGainersStocks() {
         return getListOfTopGainersStocks(100);
     }
@@ -71,10 +74,12 @@ public class StocksManagement {
      * @param stockList List of Stocks to add
      * @return updated Watchlist
      */
+    @Step("WebUI Add Stocks to the WatchList")
     public static WatchList addStocksToTheWatchList(WatchList watchList, List<Stock> stockList) {
         logger.trace("Method started..");
 
-        ProfilePage profilePage = new TradingViewPage().clickOnSignInButton()
+        ProfilePage profilePage = new TradingViewPage()
+                .clickOnSignInButton()
                 .clickOnSignInLinkedText()
                 .clickOnSignInWithGoogle()
                 .fillEmail(GlobalProperty.getProperty("USER_LOGIN"))
@@ -109,6 +114,7 @@ public class StocksManagement {
      * @param stock     Stock instance
      * @return updated WatchList
      */
+    @Step("WebUI Add Stock to the WatchList")
     public static WatchList addStockToTheWatchList(WatchList watchList, Stock stock) {
         logger.trace("Method started..");
 

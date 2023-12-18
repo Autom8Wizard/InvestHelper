@@ -2,11 +2,14 @@ package testhooks;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.logevents.SelenideLogger;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.selenide.AllureSelenide;
+import lombok.Getter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.*;
-import tradingview.models.SharedContext;
+import tradingview.utils.DataTransferStub;
 import tradingview.utils.PropertyHandler;
 import tradingview.utils.annotations.Configurator;
 import tradingview.utils.annotations.NoTestData;
@@ -16,6 +19,7 @@ import tradingview.utils.props.TestCaseProperty;
 import tradingview.utils.testdataproviders.TestDataFactory;
 import tradingview.utils.testdataproviders.TestDataLoader;
 import tradingview.utils.testdataproviders.TestDataProvider;
+import tradingview.utils.video.VideoRecorder;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -26,7 +30,11 @@ public class TestHooks {
     private static final Logger logger = LogManager.getLogger(TestHooks.class);
 
 
-    private SharedContext sharedContext;
+    private boolean setupRequired;
+    private boolean setupBackRequired;
+    private boolean noTestData;
+    @Getter
+    private VideoRecorder videoRecorder;
 
 
     /**
@@ -75,6 +83,8 @@ public class TestHooks {
         }
         Configuration.headless = false;
         Configuration.browserSize = "1920x1080";
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+
         logger.info("WebDriver update/check finished.");
     }
 
@@ -87,7 +97,7 @@ public class TestHooks {
      */
     @BeforeEach
     public void a02(TestInfo testInfo) throws FileNotFoundException {
-        String testName = testInfo.getDisplayName();
+        String testName = testInfo.getTestMethod().get().getName();
         LoggingConfigurator.configureLogProperties(
                 PropertyHandler.mergeProperties(
                         LoggingConfigurator.getGlobalLoggingProperties(),
@@ -113,24 +123,20 @@ public class TestHooks {
         Configurator configurationAnnotation = t.getTestMethod().get().getAnnotation(Configurator.class);
         NoTestData noTestDataAnnotation = t.getTestMethod().get().getAnnotation(NoTestData.class);
 
-        if (sharedContext == null) {
-            sharedContext = new SharedContext();
-        }
-
         // define variables in accordance with the specified annotations
         // configuration
         if (configurationAnnotation != null) {
             if (configurationAnnotation.setup()) {
-                sharedContext.setSetupRequired(true);
+                setupRequired = true;
             }
             if (configurationAnnotation.setupBack()) {
-                sharedContext.setSetupBackRequired(true);
+                setupBackRequired = true;
             }
         }
 
         // no test data
         if (noTestDataAnnotation != null) {
-            sharedContext.setNoTestData(true);
+            noTestData = true;
         }
     }
 
@@ -149,7 +155,7 @@ public class TestHooks {
         String testName = testInfo.getTestMethod().get().getName();
         GlobalProperty.setProperty("testName", testName);
 
-        if (!sharedContext.isNoTestData()) {
+        if (!noTestData) {
             TestDataFactory testDataFactory = TestDataLoader.createTestDataBySource(GlobalProperty.getProperty("TESTDATA_PROVIDER"));
             TestDataProvider dataProvider = testDataFactory.createTestDataProvider(testName);
             Map<String, String> testData = dataProvider.loadTestData();
@@ -170,7 +176,7 @@ public class TestHooks {
      */
     @BeforeEach()
     public void a05() {
-        if (sharedContext.isSetupRequired()) {
+        if (setupRequired) {
             logger.info("Test Case Setup started...");
             Setup.testCaseSetup();
             logger.info("Test Case Setup finished.");
@@ -181,14 +187,31 @@ public class TestHooks {
 
 
     /**
+     * Start video recording for the Test Case
+     *
+     * @param testInfo TestInfo
+     */
+    @BeforeEach
+    public void a06(TestInfo testInfo) {
+        String testName = testInfo.getTestMethod().get().getName();
+        this.videoRecorder = new VideoRecorder(testName);
+        // start the recording of the test
+        this.videoRecorder.startRecording();
+        // save video recorder instance in temporary object holder class (can be invoked from testListeners)
+        DataTransferStub.setObject(this.videoRecorder);
+        logger.trace("Video Recording for the test case '" + testName + "' started.");
+    }
+
+
+    /**
      * Remove Setup created during Test Case execution or specific Setup created in Before Method
      * The hook runs for each method (test case)
      * The goal is to Remove additionally Created Setup for Test Case
      * Can be enabled on the test case level (if there is setup required to be removed for the test case)
      */
     @AfterEach()
-    public void a06() {
-        if (sharedContext.isSetupBackRequired()) {
+    public void a07() {
+        if (setupBackRequired) {
             logger.info("Test Case SetupBack started...");
             SetupBack.testCaseSetupBack();
             logger.info("Test Case SetupBack finished.");
@@ -204,7 +227,7 @@ public class TestHooks {
      * The goal is to close active webDriver is he was initialized in the @Before method
      */
     @AfterEach
-    public void a07() {
+    public void a08() {
         Selenide.closeWebDriver();
     }
 }
